@@ -1,0 +1,5 @@
+# dshm-browser-bridge bundle patch —— 只插一行：把插件本体挂进 loader。
+# 插件自身不依赖任何注入服务，apply() 里只起本地桥 + 导出扩展文件。
+- insert:
+    - id: browser-bridge
+      name: 'dshm-browser-bridge'
