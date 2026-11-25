@@ -1,0 +1,21 @@
+{
+  "name": "dshm-browser-bridge",
+  "version": "1.0.0",
+  "description": "DSHM 浏览器桥插件：在宿主进程里架本地桥，并导出配套浏览器扩展，供 Agent 驱动网页。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": ["dshm", "dshm-plugin", "browser", "automation", "harmonyos"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
